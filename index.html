@@ -15,9 +15,9 @@
     }
 
     .wrapper {
-      max-width: 820px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 18px 10px;
+      padding: 14px 8px;
     }
 
     .card {
@@ -25,32 +25,22 @@
       overflow: hidden;
       min-height: 100vh;
 
-      background-image:
-        linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)),
-        url("sakura-bg.png.png");
-
+      background-image: url("sakura-bg.png.png");
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;
 
-      padding: 58px 48px;
-      border-radius: 4px;
+      padding: 76px 70px;
+      border-radius: 2px;
       box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-      border: 1px solid #ead7c6;
     }
 
-    .card::before {
-      content: "";
-      position: absolute;
-      inset: 18px;
-      border: 1px solid #d9bfa7;
-      pointer-events: none;
-      z-index: 1;
-    }
-
-    .card > * {
+    .content {
       position: relative;
       z-index: 2;
+      background: rgba(255, 255, 255, 0.58);
+      padding: 36px 34px;
+      border-radius: 4px;
     }
 
     h1 {
@@ -94,7 +84,7 @@
     }
 
     .message {
-      background: rgba(239, 228, 213, 0.78);
+      background: rgba(239, 228, 213, 0.82);
       padding: 22px;
       border-radius: 12px;
       margin-top: 36px;
@@ -110,23 +100,20 @@
 
     @media screen and (max-width: 600px) {
       .wrapper {
-        padding: 8px;
+        padding: 0;
       }
 
       .card {
-        padding: 44px 24px;
-
-        background-image:
-          linear-gradient(rgba(255,255,255,0.62), rgba(255,255,255,0.62)),
-          url("sakura-bg.png.png");
-
+        padding: 48px 22px;
+        background-image: url("sakura-bg.png.png");
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
       }
 
-      .card::before {
-        inset: 12px;
+      .content {
+        background: rgba(255, 255, 255, 0.62);
+        padding: 28px 20px;
       }
 
       h1 {
@@ -154,79 +141,81 @@
 <body>
   <div class="wrapper">
     <div class="card">
+      <div class="content">
 
-      <h1>テスト様 鑑定書</h1>
+        <h1>テスト様 鑑定書</h1>
 
-      <h2>❖ はじめに</h2>
+        <h2>❖ はじめに</h2>
 
-      <p>
-        このたびは、鑑定をお申し込みいただきありがとうございます。
-      </p>
-
-      <p>
-        いただいた内容をもとに、今の状況とこれからの流れを視てまいりました。
-      </p>
-
-      <p>
-        今回の鑑定書では、今のお気持ちやお相手様の状態、そしてこれからどのように向き合っていけばよいのかを、順を追ってお伝えしてまいります。
-      </p>
-
-      <ul>
-        <li>今の状況について</li>
-        <li>お相手様のお気持ち</li>
-        <li>関係が止まっている理由</li>
-        <li>これからの流れ</li>
-        <li>今選ぶべき一歩</li>
-      </ul>
-
-      <h2>今の状況について</h2>
-
-      <p>
-        ここに鑑定文を入れます。これはテスト用の文章です。
-      </p>
-
-      <p>
-        スマホで読みやすいように、文章は段落ごとに分けて表示します。
-      </p>
-
-      <h2>お相手様のお気持ち</h2>
-
-      <p>
-        ここにお相手様のお気持ちについての鑑定文を入れます。
-      </p>
-
-      <p>
-        必要に応じて、ここにさらに文章を追加していきます。
-      </p>
-
-      <h2>関係が止まっている理由</h2>
-
-      <p>
-        ここに関係が止まっている理由についての鑑定文を入れます。
-      </p>
-
-      <h2>これからの流れ</h2>
-
-      <p>
-        ここにこれからの流れについての鑑定文を入れます。
-      </p>
-
-      <h2>今選ぶべき一歩</h2>
-
-      <p>
-        ここに今後の向き合い方や、相談者様へお伝えしたいことを入れます。
-      </p>
-
-      <div class="message">
         <p>
-          今回の鑑定書は、今の状況を整理しながら、これからどのように向き合っていけばよいのかをお伝えする内容です。
+          このたびは、鑑定をお申し込みいただきありがとうございます。
         </p>
-      </div>
 
-      <div class="footer">
-        椿
-      </div>
+        <p>
+          いただいた内容をもとに、今の状況とこれからの流れを視てまいりました。
+        </p>
 
+        <p>
+          今回の鑑定書では、今のお気持ちやお相手様の状態、そしてこれからどのように向き合っていけばよいのかを、順を追ってお伝えしてまいります。
+        </p>
+
+        <ul>
+          <li>今の状況について</li>
+          <li>お相手様のお気持ち</li>
+          <li>関係が止まっている理由</li>
+          <li>これからの流れ</li>
+          <li>今選ぶべき一歩</li>
+        </ul>
+
+        <h2>今の状況について</h2>
+
+        <p>
+          ここに鑑定文を入れます。これはテスト用の文章です。
+        </p>
+
+        <p>
+          スマホで読みやすいように、文章は段落ごとに分けて表示します。
+        </p>
+
+        <h2>お相手様のお気持ち</h2>
+
+        <p>
+          ここにお相手様のお気持ちについての鑑定文を入れます。
+        </p>
+
+        <p>
+          必要に応じて、ここにさらに文章を追加していきます。
+        </p>
+
+        <h2>関係が止まっている理由</h2>
+
+        <p>
+          ここに関係が止まっている理由についての鑑定文を入れます。
+        </p>
+
+        <h2>これからの流れ</h2>
+
+        <p>
+          ここにこれからの流れについての鑑定文を入れます。
+        </p>
+
+        <h2>今選ぶべき一歩</h2>
+
+        <p>
+          ここに今後の向き合い方や、相談者様へお伝えしたいことを入れます。
+        </p>
+
+        <div class="message">
+          <p>
+            今回の鑑定書は、今の状況を整理しながら、これからどのように向き合っていけばよいのかをお伝えする内容です。
+          </p>
+        </div>
+
+        <div class="footer">
+          椿
+        </div>
+
+      </div>
     </div>
   </div>
 </body>
